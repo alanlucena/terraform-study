@@ -3,7 +3,7 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["IaaSWeek-${var.hash_commit}"]
+    values = ["alanteste-terraform-${var.hash_commit}"]
   }
 
   owners = ["178520105998"] # Gomex ID, não mude sem mudar o filtro
